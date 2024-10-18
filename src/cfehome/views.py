@@ -7,6 +7,7 @@ this_dir=pathlib.Path(__file__).resolve().parent
 def home_page_view(request,*args,**kwargs):
   qs=PageVisit.objects.all()
   page_qs=PageVisit.objects.filter(path=request.path)
+  html_template='home.html'
   my_title='My page'
   my_context={
     'page_title':my_title,
