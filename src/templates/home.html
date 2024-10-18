@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+{% block head_title%}THis is {{block.super}} {% endblock head_title%}
+
+{% block content%}
+<p>Hello again</p>
+
+<h3> The total visits are {{totalvisits}}</h3>
+<h3> This page visits are{{page_qs}}</h3>
+<h3> The percentage of traffic is {{percent}}</h3>
+
+
+{% include 'snippets/welcome-user-msg.html' %}
+
+{% endblock content%}
